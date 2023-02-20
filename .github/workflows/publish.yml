@@ -32,7 +32,7 @@ jobs:
           publish: pnpm run release
         env:
           # Changesets needs a GitHub token to be able to create a release pull request
-          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           # If you want to publish to npm, you need to set up an npm token, so changesets can publish your packages
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
